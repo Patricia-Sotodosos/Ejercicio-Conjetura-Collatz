@@ -6,6 +6,7 @@ public class Conjetura_Collatz {
 
     public static void collatz(int numero) {
        System.out.println("resultado:");
+        if(numero>0){
         while (numero != 1) {
             if (numero % 2 == 0) {
                 numero = numero / 2;
@@ -13,8 +14,11 @@ public class Conjetura_Collatz {
                 numero = numero * 3 + 1;
             }
             System.out.print(numero + " ");
+          }
         }
-
+      else{
+      return;
+      }
     }
 
     public static void main(String[] args) {
