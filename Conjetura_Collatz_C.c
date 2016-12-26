@@ -5,7 +5,7 @@
 
 void collatz(int numero)
 {
-
+if(numero>0){
     while(numero!=1)
     {
         if(numero%2 == 0)
@@ -17,6 +17,10 @@ void collatz(int numero)
             numero=numero*3+1;
         }
         printf("%i ",numero);
+    }
+  }
+else {
+    return;
     }
 }
 
